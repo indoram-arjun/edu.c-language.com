@@ -1,0 +1,1851 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+
+:root{
+    --yel-ico:#ffab17;
+
+}
+
+html 
+{
+    font-size: 20px;
+}
+img 
+{
+    width: 100%;
+}
+[id^="sec"]:not(#sec2),footer,#contact
+{
+    padding: 70px 0;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+.cursor
+{
+    width: 10px;
+    height: 10px;
+    background: #757ada ;
+    border-radius: 50%;
+     position: fixed;
+    z-index: 999;
+    transition-duration: .05s;
+    pointer-events: none;
+     z-index: 10000;
+}
+.cursor::before
+{
+    background-color: inherit;
+    position: absolute;
+    padding: 10px;
+    opacity: .5;
+    content: "";
+    border-radius: 100%;
+    left: -5px;
+    bottom: -5px;
+
+}
+.control2 li
+{
+    padding: 20px !important;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    
+}
+.bluetog
+{
+    background-color: #f5f5f5;
+}
+.round-togger
+{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.round-togger::before
+{
+    position: absolute;
+     width: 15px;
+  height: 30px;
+    left: 0;
+    top: 0;
+    content: "";
+    background-color: white;
+}
+.carousel-item
+{
+    position: relative;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:172px 0;
+    clip-path: ellipse(120% 100% at 50% 0%);
+         
+        
+}
+
+
+.carousel-item:nth-child(1)
+{
+
+    background-image:linear-gradient(61deg,rgba(40, 37, 41, 0.85)0%,rgba(15, 19, 56, 0.85)100%) , url("../img/14.jpg") ;
+}
+.carousel-item:nth-child(2)
+{
+    background-image:linear-gradient(rgba(1,1,1,.8)0%,rgba(15, 19, 56, 0.8)100%) ,url("../img/15.jpg") ;
+}
+.carousel-item:nth-child(3)
+{
+    background-image:linear-gradient(rgba(1,1,1,.8)0%,rgba(15, 19, 56, 0.8)100%) , url("../img/17.jpg") ;
+}
+.carousel-item:nth-child(4)
+{
+    background-image:linear-gradient(rgba(1,1,1,.8)0%,rgba(15, 19, 56, 0.8)100%) , url("../img/18.jpg") ;
+}
+.carousel-item:nth-child(5)
+{
+    background-image:linear-gradient(rgba(1,1,1,.8)0%,rgba(15, 19, 56, 0.8)100%) , url("../img/19.jpg") ;
+}
+
+/* .carousel-item:nth-child(1), .important{
+    background-image: linear-gradient(rgba(40, 37, 41, 0.85) 0%, rgba(15, 19, 56, 0.85) 100%), url(../img/index-2-2.jpg);
+} */
+
+
+
+header h1 
+{
+    font-size: 2.7rem;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(to right, #757ada, #f7f3f0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+   text-shadow: 5px 5px 20px rgba(193, 115, 226, 0.45);
+}
+#sec2 .col-12 .row
+{
+    background-color: #265E77;
+}
+nav 
+{
+    background: linear-gradient(to top, rgba(250, 248, 248,.1));
+    backdrop-filter: blur(10px);
+   
+}
+nav a 
+{
+ color: #1DBB90 !important;
+ position: relative;
+ overflow: hidden;
+ padding:  9px !important;
+}
+nav a::before
+{
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    border: 1px solid #bada75;
+    width: 100%;
+    content: "";
+    transition: left .3s ease-in;
+}
+nav a:hover::before
+{
+    left: 0%;
+}
+#sec2 
+{
+    position: relative;
+    top: -100px;
+}
+#sec2 i 
+{
+    color: orangered;
+    font-size: 60px;
+    padding: 20px 0;
+    margin-bottom: 10px;
+}
+.data-sec2 
+{
+    border-radius: 20px;
+    margin: 20px 0;
+}
+#sec2 .col-lg-4 .data-sec2 
+{
+    transition: .5s ease-in-out;
+}
+#sec2 .col-lg-4:hover .data-sec2
+{
+    transform: translateY(-20px);
+    box-shadow: 0px 8px 5px #519abc;
+}
+img 
+{
+    width: 100%;
+}
+
+#sec3 .im
+{
+    position: relative;
+    padding: 20px;
+    display: inline-block;
+    
+}
+#sec3 img 
+{
+    width: 100%;
+        border-radius: 100%;
+    aspect-ratio: 1 / 1;
+    
+
+}
+#sec3 .im::before,#sec3 .im::after
+{
+ z-index: -1;
+    position: absolute;
+    content: "";
+    border-radius: 100%;
+     opacity: .5;
+    backdrop-filter: blur(20px);
+    transition-duration: .5s;
+        width: 100%;
+    aspect-ratio: 1/1;
+}
+
+#sec3 .im::before
+{
+    background-color: #757ada;
+   top: 20px;
+    left: -20px;
+   
+}
+#sec3 .im::after
+{
+    background-color: #bada75;
+  top: -20px;
+    right: -20px;
+}
+#sec3 .im:hover::after
+{
+    right: 20px;
+    top: 20px;
+}
+#sec3 .im:hover::before
+{
+    left: 20px;
+    top: -20px;
+}
+.mores .card-img-top
+{
+    overflow: hidden;
+}
+.mores .card-img-top
+{
+    position: relative;
+}
+.mores .card-img-top::before
+{
+    content: "Read More";
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    bottom: -80px;
+    left: 0;
+    transition: .5s;
+    color: aliceblue;
+    background-color: rgba(0,0,0,.4);
+}
+.mores .card-img-top:hover:before
+{
+    bottom: 0;
+}
+
+iframe{
+    width: 580px;
+    min-width:380px;
+    min-height: 445px;
+    margin-top: 20px;
+    border-radius: 40px 0px 40px 0px;
+}
+
+.tutorial-list{
+    list-style: none;
+    padding-left: 0rem;
+}
+
+.tutorial-list li{
+    padding-top: 10px;
+}
+
+
+.topic{
+    font-weight: 620;
+    text-align: center;
+}
+
+.sec5btn 
+{
+    background-color: #757ada;
+    color: white !important;
+    box-shadow: -10px 5px 5px rgba(11, 19, 133, 0.5);
+}
+.my-data
+{
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 20px;
+    transition: .5s;
+    margin: 0 20px;
+    filter: blur(1px) grayscale(100%);
+}
+.my-data h3 
+{
+    margin: 20px 0;
+}
+.my-data i {
+    font-size: 40px;
+    color: rgb(65, 65, 189);
+    -webkit-box-reflect: below;
+    margin: 10px 0;
+}
+.my-data:hover{
+    transform: translateY(-10px);
+    box-shadow: 10px 10px 10px rgba(0,0,0,.5);
+    filter: blur(0);
+}
+.my-data:hover i 
+{
+    
+    color: blueviolet;
+}
+.my-data:hover h3 
+{
+    color: blue;
+}
+#sec5,#sec4
+{
+    padding: 50px 0;
+}
+#sec5 .col-lg-6:nth-child(1)
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+#sec5 i 
+{
+    color: #757ada;
+    font-size: 45px; 
+}
+#sec5 .col-lg-6:nth-child(2) img
+{
+    border-radius: 0 40px;
+    transition-duration: .5s;
+}
+#sec5 .col-lg-6:nth-child(2):hover img
+{
+      transform: scaleX(-1);
+}
+.sec5btn:hover
+{
+    background-color: orange;
+     box-shadow: 10px -5px 5px rgba(157, 141, 24, 0.5);
+     border-radius: 5px 20px 5px 20px !important;
+}
+
+#sec6 h1{
+    padding-bottom: 2rem;
+}
+
+
+#sec6 .card-body 
+
+{
+    overflow: hidden;
+    backdrop-filter: blur(10px) !important;
+    background-color: #f5f5f5 !important;
+}
+
+#sec6 i:last-of-type
+{
+    bottom: -22px;
+    right: -23px;
+    font-size: 50px;
+    color: var(--yel-ico);
+    opacity: .2;
+    transition-duration: .5s;
+    transform: rotate(180deg);
+}
+#sec6 i:first-of-type
+{
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+    right: 20px;
+    top: 10px;
+    color: white;
+    font-size: 22px;
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    border-radius: 100%;
+       transition-duration: .5s;
+}
+#sec6 .card:hover i:last-of-type
+{
+    opacity: 1;
+    bottom: -15px;
+    right: -15px;
+}
+#sec6 .card:hover i:first-of-type
+{
+    background-color: var(--yel-ico);
+    transform: translateY(-5px) rotate(5deg);
+}
+
+#sec6-1 a{
+    color: #ffffff;
+}
+.owl-nav 
+{
+    display: none !important;
+}
+.owl-dots
+{
+    margin-top: 30px;
+}
+#sec7 img 
+{
+    width: 100%;
+    border-radius: 30px 60px;
+}
+#sec8 
+{
+    width: 100%;
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 200px 0;
+    background-image: linear-gradient(rgba(1,1,1,.8)0%,rgba(15, 19, 56, 0.8)100%),url("../img/sec8-3.jpg");
+}
+#sec8 span 
+{
+    padding: 20px;
+    transition-duration: .5s;
+    border-radius: 40px;
+
+}
+/* #sec8 span:hover 
+{
+   
+    background-color: gray;
+    
+} */
+#sec4-1 .my-data{
+    position: relative;
+    overflow: hidden;
+}
+#sec4-1 .my-data::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    top: 0;
+    left: -100%;
+    border: 2px solid #757ada;
+    transition-duration: .5s;
+
+}
+#sec4-1 .my-data::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+   bottom: 0;
+    right: -100%;
+    border: 2px solid #dac875;
+    transition-duration: .5s;
+
+}
+#sec4-1 .my-data:hover::before{
+    left: 0%;
+}
+#sec4-1 .my-data:hover::after{
+    right: 0;
+}
+#sec6-1 .col-lg-3{
+    overflow: hidden;
+    filter: grayscale(100%);
+    transition-duration: .5s;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.my-box{
+    bottom: -100%;
+    width: 87%;
+    background: linear-gradient(rgba(0,0,0,.4));
+    color: white;
+    border-radius: 40px;
+    transition-duration: .5s;
+}
+#sec6-1 .col-lg-3:hover .my-box
+{
+    bottom: 0;
+}
+#sec6-1 .col-lg-3:hover
+{
+    filter: grayscale(0);
+}
+footer 
+{
+    background-color: #f5f5f5;
+    padding: 50px 30px 30px 30px;
+}
+
+footer .p-2{
+    padding: 0rem !important;
+}
+
+footer ul{
+    padding: 0rem;
+}
+footer ul li 
+{
+    list-style: none;
+    padding: .141rem 0rem;
+}
+#contact .pics 
+{
+   background-repeat: no-repeat;
+   background-size: cover;
+    aspect-ratio: 2/1;
+    border-radius: 20px 0 0 30px;
+    color: white;
+    background-image:linear-gradient(rgba(0,0,0,.7)),url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv-HA-F4AyJG9ILpFet-mYLqbe-MwsRCd0cw&s");
+}
+
+
+
+
+
+
+
+
+
+/* Index-2 */
+#nextpage .carousel-item:nth-child(1){
+    background-image: linear-gradient(rgba(40, 37, 41, 0.85) 0%, rgba(15, 19, 56, 0.85) 100%), url(../img/index-2-2.jpg);
+}
+
+#nextpage .carousel-item{
+    clip-path:none;
+}
+
+
+#sec1-1 ul li{
+    padding: .098rem 0rem 0rem 0rem;
+}
+
+
+
+
+
+/* Index-3 */
+#index-3 .carousel-item:nth-child(1){
+    background-image: linear-gradient(rgba(40, 37, 41, 0.85) 0%, rgba(15, 19, 56, 0.85) 100%), url(../img/index-3-2.jpg);
+}
+
+#index-3 .carousel-item{
+    clip-path:none;
+}
+
+
+
+
+/* section2-1 starts */
+/* #sec2-1{
+    top: -100px;
+} */
+
+
+#sec2-1 .define{
+    padding: 1.5rem;
+    background-color: #f2f1f8;
+}
+
+#sec2-1 .define h3{
+    padding: 0rem 0rem 1rem 0rem;
+}
+
+#sec2-1 .define li{
+    padding: 0rem 0rem .41rem 0rem;
+}
+
+
+#sec2-1 .define p{
+    padding: .15rem 2rem 0rem 0rem;
+}
+
+
+#sec2-1 .structure {
+    padding: 1.5rem;
+    background-color: #d1e7f1;
+}
+
+#sec2-1 .structure h3{
+    text-align: center;
+    padding: 0rem 0rem 3rem 0rem;
+}
+
+
+#sec2-1 .ex li{
+    list-style: none;
+}
+
+
+#sec2-1 .ex li span{
+    color: blue;
+}
+/* ends */
+
+
+
+
+/* section-2-2 */
+#sec2-2{
+    margin:0rem 0rem 2rem 0rem;
+}
+
+
+#sec2-2 .Keywords {
+    padding: 1.5rem;
+    background-color: #d1e7f1;
+    height: 580px;
+}
+
+
+#sec2-2 .Keywords h3{
+    text-align: center;
+    padding: 0rem 0rem 2rem 0rem;
+}
+
+
+
+#sec2-2 .define-2{
+    padding: 1.5rem;
+    background-color: #f2f1f8;
+}
+
+#sec2-2 .define-2 h3{
+    padding: 0rem 0rem 2rem 0rem;
+}
+
+
+#sec2-2 .define-2 h5 i{
+    font-size: 0.83rem;
+    color: red;
+}
+
+
+#sec2-2 .accordion-body p{
+    margin-bottom:0rem;
+}
+
+#sec2-2 .accordion-body .space{
+    padding-left: 1rem;
+}
+
+
+#sec2-2 .accordion-body .rules{
+    padding: .98rem  0rem .58rem 0rem;
+}
+/* ends */
+
+
+
+
+/* section-2-3 */
+#sec2-3 table th , #sec2-3 table td{
+    padding: 1rem;
+}
+
+
+
+
+
+
+/* Index-4*/
+#index-4 .carousel-item:nth-child(1){
+    background-image: linear-gradient(rgba(40, 37, 41, 0.85) 0%, rgba(15, 19, 56, 0.85) 100%), url(../img/sec8.jpg);
+}
+
+#index-4 .carousel-item{
+    clip-path:none;
+}
+
+#sec3-1,#sec3-2,#sec3-3,#sec3-4,#sec3-5{
+    background-color: #fbfffb;
+    color: #000;
+    /* color: #333333; */
+}
+
+
+/* section3-1 */
+#sec3-1 .define3-1{
+    padding: 1.5rem;
+    background-color: #f2f1f8;
+}
+
+#sec3-1 .define3-1 h3{
+    padding: 0rem 0rem 1rem 0rem;
+}
+
+#sec3-1 .define3-1 li{
+    padding: 0rem 0rem .41rem 0rem;
+}
+
+
+#sec3-1 .define3-1 p{
+    padding: .15rem 2rem 0rem 0rem;
+}
+
+
+#sec3-1 .type3-1{
+    padding: 1.2rem;
+    background-color: #d1e7f1;
+}
+
+
+#sec3-1 .type3-1 img{
+    transition-duration: 1.3s;
+}
+
+
+#sec3-1 .type3-1 img:hover{
+    transform: scale(1.1);
+}
+
+
+
+/* section-2 */
+#sec3-2 h3,
+#sec3-3 h3,
+#sec3-4 h3,
+#sec3-5 h3{
+    padding-bottom: 1rem;
+    text-align: center;
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5rem;
+}
+
+#sec3-2 .para,
+#sec3-4 .para,
+#sec3-5 .para{
+    padding: 0.75rem 6.4rem  2rem 6.4rem;
+    text-align: center;
+}
+
+
+
+
+/* section3-2 */
+#sec3-2 .accordion-flush>.accordion-item>.accordion-header .accordion-button, .accordion-flush>.accordion-item>.accordion-header .accordion-button.collapsed{
+    border-radius: 50px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+#sec3-2 .accordion-body{
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+
+/* section3-3 */
+#sec3-3 li{
+    list-style: none;
+    padding: 0.05rem 6rem 2rem 6rem;
+    text-align: center;
+}
+
+
+#sec3-3 .accordion-flush>.accordion-item>.accordion-header .accordion-button, .accordion-flush>.accordion-item>.accordion-header .accordion-button.collapsed{
+    border-radius: 50px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+#sec3-3 .accordion-body{
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+
+/* section3-4 */
+#sec3-4 .accordion-flush>.accordion-item>.accordion-header .accordion-button, .accordion-flush>.accordion-item>.accordion-header .accordion-button.collapsed{
+    border-radius: 50px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+#sec3-4 .accordion-body{
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+
+/* section3-5 */
+#sec3-5 #t2{
+    padding-top: 3.7rem;
+}
+
+#sec3-5 .bottom1 h5,
+#sec3-5 .bottom2 h5,
+#sec3-5 .bottom3 h5{
+    padding: 2.4rem 0rem .82rem 0rem;
+}
+
+#sec3-5 .bottom1-table{
+    width: 50%;
+    margin: 2rem;
+}
+
+#sec3-5 .bottom1-table td,#sec3-5 .bottom1-table th{
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid;
+}
+
+
+#sec3-5 .accordion-flush>.accordion-item>.accordion-header .accordion-button, .accordion-flush>.accordion-item>.accordion-header .accordion-button.collapsed{
+    border-radius: 50px;
+    width: 60%;
+    margin: 0 auto;
+    margin-top:1rem;
+    margin-bottom: 1rem;
+}
+
+
+#sec3-5 .accordion-body{
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+
+
+/* All together index4 */
+#sec3-2 .accordion-header,
+#sec3-3 .accordion-header,
+#sec3-4 .accordion-header,
+#sec3-5 .accordion-header{
+    background-color:#fbfffb ;
+}
+
+#sec3-2 .accordion-flush>.accordion-item>.accordion-collapse,
+#sec3-3 .accordion-flush>.accordion-item>.accordion-collapse,
+#sec3-4 .accordion-flush>.accordion-item>.accordion-collapse,
+#sec3-5 .accordion-flush>.accordion-item>.accordion-collapse{
+    background-color:#fbfffb ;
+}
+
+
+.accordion-body .space{
+    padding-left: 1rem;
+}
+
+.accordion-body .space2{
+    padding-left: 2rem;
+}
+
+#sec3-2 img,
+#sec3-3 img,
+#sec3-4 img,
+#sec3-5 img{
+    width: 100%;
+}
+
+
+
+#sec3-2 .image3-2,
+#sec3-3 .image3-3,
+#sec3-4 .image3-4,
+#sec3-5 .image3-5{
+    width: 60%;
+    margin-bottom: 1rem;
+}
+/* ends */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* index5 starts */
+#index-5 .carousel-item:nth-child(1){
+    background-image: linear-gradient(rgba(40, 37, 41, 0.85) 0%, rgba(15, 19, 56, 0.85) 100%), url(../img/index-3-1.jpg);
+}
+
+#index-5 .carousel-item{
+    clip-path:none;
+}
+
+
+#sec4-1{
+    background-color:#fbfffb;
+}
+
+
+#sec4-1 .image4-1{
+    padding: 0rem 7rem;
+    
+}
+
+#sec4-1 img{
+    width: 100%;
+}
+
+
+/* section-2 */
+#sec4-2 h3{
+    padding-bottom: 1rem;
+    text-align: center;
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5rem;
+}
+
+
+#sec4-2 ul li{
+    list-style: none;
+    padding-top: .76rem;
+}
+
+.space4-2{
+    padding-left: 3rem;
+}
+
+.space4-2-1{
+    padding-left: 5rem;
+    color: red;
+}
+
+
+#sec4-2 .image4-2{
+    width: 60%;
+    margin-bottom: 1.5rem;
+}
+
+
+#sec4-2 .accordion-body{
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+#sec4-2 .accordion-flush>.accordion-item>.accordion-header .accordion-button, .accordion-flush>.accordion-item>.accordion-header .accordion-button.collapsed{
+    border-radius: 50px;
+    width: 60%;
+    margin: 0 auto;
+}
+/* ends */
+
+
+
+/* section-3 */
+#sec4-3 h3{
+    padding-bottom: 1rem;
+    text-align: center;
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5rem;
+}
+
+
+#sec4-3 .image4-3{
+    width: 60%;
+    margin-bottom: 1.5rem;
+    margin-top: 1.8rem;
+}
+
+
+#sec4-3 .accordion-body{
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+#sec4-3 .accordion-flush>.accordion-item>.accordion-header .accordion-button, .accordion-flush>.accordion-item>.accordion-header .accordion-button.collapsed{
+    border-radius: 50px;
+    width: 60%;
+    margin: 0 auto;
+}
+/* ends */
+
+
+
+/* section-4 */
+#sec4-4 h3{
+    padding-bottom: 1rem;
+    text-align: center;
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5rem;
+}
+
+
+#sec4-4 .image4-4{
+    width: 60%;
+    margin-bottom: 1.5rem;
+    margin-top: 1.8rem;
+}
+
+
+#sec4-4 .accordion-body{
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+#sec4-4 .accordion-flush>.accordion-item>.accordion-header .accordion-button, .accordion-flush>.accordion-item>.accordion-header .accordion-button.collapsed{
+    border-radius: 50px;
+    width: 60%;
+    margin: 0 auto;
+}
+/* ends */
+
+
+
+
+
+
+/* section-4 */
+#sec4-5 h3{
+    padding-bottom: 1rem;
+    text-align: center;
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5rem;
+}
+
+
+#sec4-5 .image4-5{
+    width: 60%;
+    margin-bottom: 1.5rem;
+    margin-top: 1.8rem;
+}
+
+
+#sec4-5 .accordion-body{
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+#sec4-5 .accordion-flush>.accordion-item>.accordion-header .accordion-button, .accordion-flush>.accordion-item>.accordion-header .accordion-button.collapsed{
+    border-radius: 50px;
+    width: 60%;
+    margin: 0 auto;
+}
+/* ends */
+
+
+
+
+
+
+
+
+
+
+
+
+/* index-6 */
+#index-6 .carousel-item:nth-child(1){
+    background-image: linear-gradient(rgba(40, 37, 41, 0.85) 0%, rgba(15, 19, 56, 0.85) 100%), url(../img/index2-1.jpg);
+}
+
+#index-6 .carousel-item{
+    clip-path:none;
+}
+
+
+#sec5-1 h3{
+    padding-bottom: 1rem;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+
+#sec5-1 .image5-1{
+    width: 60%;
+    padding: 1rem 4rem;
+}
+
+#sec5-1 img{
+    width: 100%;
+}
+/* ends */
+
+
+
+/* section-2 */
+#sec5-2 p{
+    padding-top: 1rem;
+}
+#sec5-2 .image5-2{
+    width: 60%;
+    margin-bottom: 1.5rem;
+    margin-top: 1.8rem;
+}
+
+
+#sec5-2 .accordion-body{
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+#sec5-2 .accordion-flush>.accordion-item>.accordion-header .accordion-button, .accordion-flush>.accordion-item>.accordion-header .accordion-button.collapsed{
+    border-radius: 50px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* ends */
+
+
+
+
+/* section-3 */
+#sec5-3 p{
+    padding-top: 1rem;
+}
+
+
+#sec5-3 .image5-3{
+    width: 60%;
+    margin-bottom: 1.5rem;
+    margin-top: 1.8rem;
+}
+
+
+#sec5-3 .accordion-body{
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+#sec5-3 .accordion-flush>.accordion-item>.accordion-header .accordion-button, .accordion-flush>.accordion-item>.accordion-header .accordion-button.collapsed{
+    border-radius: 50px;
+    width: 60%;
+    margin: 0 auto;
+}
+/* ends */
+
+
+
+/* section-3 */
+#sec5-4 p{
+    padding-top: 1rem;
+}
+
+
+#sec5-4 .image5-4{
+    width: 60%;
+    margin-bottom: 1.5rem;
+    margin-top: 1.8rem;
+}
+
+
+#sec5-4 .accordion-body{
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+#sec5-4 .accordion-flush>.accordion-item>.accordion-header .accordion-button, .accordion-flush>.accordion-item>.accordion-header .accordion-button.collapsed{
+    border-radius: 50px;
+    width: 60%;
+    margin: 0 auto;
+}
+/* ends */
+
+
+
+
+
+
+
+
+
+
+
+
+/* index-7 */
+#index-7 .carousel-item:nth-child(1){
+    background-image: linear-gradient(rgba(40, 37, 41, 0.85) 0%, rgba(15, 19, 56, 0.85) 100%), url(../img/loop.jpg);
+}
+
+#index-7 .carousel-item{
+    clip-path:none;
+}
+
+
+#sec6-1 h3{
+    padding-bottom: 1rem;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+#sec6-1 ul{
+    padding-left: 0rem;
+}
+
+#sec6-1 ul li{
+    list-style: none;
+    padding-top: .48rem;
+}
+
+
+#sec6-1 .image6-1{
+    width: 60%;
+    margin-bottom: 1.5rem;
+    margin-top: 1.8rem;
+}
+
+#sec6-1  .bottom6-1{
+    padding: 2rem 0rem;
+}
+
+#sec6-1 h5{
+    font-weight: 600;
+    padding-bottom: 1rem;
+    padding-top: 1.5rem;
+}
+
+
+#sec6-1  td, #sec6-1  th{
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid;
+}
+
+
+/* psudo element */
+#sec6-1 .right6-1::before{
+    content: "";
+    height: 650px;
+    width: 1px;
+    position: absolute;
+    display: block;
+    background-color: grey;
+    margin-left:-5rem;
+    margin-top: 1rem;
+}
+/* ends */
+
+
+
+/* section-2 */
+#sec6-2 h3{
+    padding-bottom: 1.5rem;
+    text-align: center;
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5rem;
+}
+
+
+#sec6-2 span{
+    color:blue;
+    padding-left: 1rem;
+}
+/* ends */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Index-8*/
+#index-8 .carousel-item:nth-child(1){
+    background-image: linear-gradient(rgba(40, 37, 41, 0.85) 0%, rgba(15, 19, 56, 0.85) 100%), url(../img/cs1.jpg);
+}
+
+#index-8 .carousel-item{
+    clip-path:none;
+}
+
+
+#sec7-1 h3{
+    padding-bottom: 1rem;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+
+#sec7-1 h4{
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    font-weight: 650;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+#sec7-1 h5{
+    padding-top: 1.5rem;
+}
+
+
+#sec7-1 ul li{
+    list-style: none;
+    padding-top: .26rem;
+}
+
+
+#sec7-1 .image7-1{
+    width: 60%;
+    margin-bottom: 1.5rem;
+    margin-top: 1.8rem;
+}
+
+#sec7-1 .bottom7-1 li{
+    padding-top: .54rem;
+}
+
+
+#sec7-1 .bottom7-1 span{
+    color: red;
+    padding-left: 1rem;
+}
+
+#sec7-1 .bottom7-1 h5{
+    font-size: 1.5rem;
+}
+
+
+#sec7-1 .bottom7-1 .rightsec7-1::before{
+    content: "";
+    height: 400px;
+    width: 1px;
+    position: absolute;
+    display: block;
+    background-color: grey;
+    margin-left: -1.2rem;
+}
+
+
+#sec7-1 .accordion-flush>.accordion-item>.accordion-header .accordion-button, .accordion-flush>.accordion-item>.accordion-header .accordion-button.collapsed{
+    width: 100%;
+    border-radius: 0px;
+}
+
+/* ends */
+
+
+
+
+
+/* section-2 starts */
+#sec7-2 h4{
+    padding-bottom: 1rem;
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+#sec7-2 ul li{
+    list-style: none;
+}
+
+#sec7-2 .list7-2 .space{
+    padding-left: 1.2rem;
+}
+/* ends */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Index-9*/
+#index-9 .carousel-item:nth-child(1){
+    background-image: linear-gradient(rgba(40, 37, 41, 0.85) 0%, rgba(15, 19, 56, 0.85) 100%), url(../img/sec8-2.jpg);
+}
+
+#index-9 .carousel-item{
+    clip-path:none;
+}
+
+
+#sec8-1 h3{
+    padding-bottom: 1rem;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+
+#sec8-1 ul li{
+    list-style: none;
+}
+
+
+#sec8-1 .space{
+    padding-left: 1rem;
+}
+
+
+#sec8-1 .image8-1{
+    width: 60%;
+    margin-bottom: 1.5rem;
+    margin-top: 1.8rem;
+}
+/* section-1 ends */
+
+
+
+/* section-2 starts */
+#sec8-2 h3{
+    /* padding-bottom: 1rem; */
+    font-weight: 650;
+    font-size: 2rem;
+}
+
+
+#sec8-2 p{
+    padding-top: 1rem;
+}
+
+/* section-2 ends */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Index-10*/
+#index-10 .carousel-item:nth-child(1){
+    background-image: linear-gradient(rgba(40, 37, 41, 0.85) 0%, rgba(15, 19, 56, 0.85) 100%), url(../img/cs4.jpg);
+}
+
+#index-10 .carousel-item{
+    clip-path:none;
+}
+
+#sec9-1 h3{
+    padding-bottom: 1rem;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+
+#sec9-1 .image9-1 {
+    width: 60%;
+    margin-bottom: 1.5rem;
+    margin-top: 1.8rem;
+}
+/* ends */
+
+
+
+/* section-2 starts */
+#sec9-2 h3{
+    padding-bottom: 1.5rem;
+    text-align: center;
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5rem;
+}
+
+#sec9-2 .image9-2 {
+    width: 60%;
+    margin-bottom: 1.5rem;
+    margin-top: 1.8rem;
+}
+
+
+#sec9-2 ul li{
+    list-style: none;
+}
+
+
+#sec9-2 .space{
+    padding-left: 1rem;
+}
+/* ends */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* index-11 */
+#sec10-1 ul li{
+    list-style: none;
+}
+
+#sec10-1 p{
+    padding-top: 1rem;
+}
+
+
+#sec10-1 .image10-1{
+    width: 100%;
+    margin-bottom: 1.5rem;
+    margin-top: 1.8rem;
+}
+/* ends */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Index-12*/
+#index-11 .carousel-item:nth-child(1){
+    background-image: linear-gradient(rgba(40, 37, 41, 0.85) 0%, rgba(15, 19, 56, 0.85) 100%), url(../img/loop2.jpg);
+}
+
+
+#index-11 .carousel-item{
+    clip-path:none;
+}
+
+#sec11-1 h3{
+    padding-bottom: 1rem;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+
+#sec11-1 .image11-1{
+    width: 100%;
+    margin-bottom: 1.5rem;
+    margin-top: 1.8rem;
+    padding: 0rem 10rem;
+}
+
+
+#sec11-1 ul li{
+    list-style: none;
+}
+
+
+#sec11-1 .space{
+    padding-left: 1rem;
+}
+/* ends */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Index-13 */
+#sec12-1 h3{
+    padding-bottom: 1rem;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+#sec12-1 ul li{
+    list-style: none;
+    padding-top: .57rem;
+}
+
+#sec12-1 .space{
+    padding-left: 1rem;
+}
+
+#sec12-1 ul li span{
+    color: red;
+}
+/* ends */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query starts 992px */
+@media only screen and (max-width:768px) 
+{
+    /* index */
+    #sec5 iframe{
+        height: 316px;
+        width: 18px;
+        background-color: red;
+    }
+
+
+    #sec3-2 .para, #sec3-4 .para, #sec3-5 .para{
+        padding: 0.75rem 0rem  2rem 0rem;
+    }
+
+    #sec3-2 .image3-2, #sec3-3 .image3-3, #sec3-4 .image3-4, #sec3-5 .image3-5{
+        width: 100%;
+    }
+
+
+    #sec3-3 li{
+        padding:0.05rem 0rem 2rem 0rem
+    }
+
+    #sec3-3 h3{
+        font-size: 2.2rem;
+    }
+
+
+    #sec3-5 .bottom1-table td, #sec3-5 .bottom1-table th{
+        padding: 1rem 2.5rem;
+    }
+    /* ends */
+
+
+
+
+    /* index-5 */
+    #sec4-1 .image4-1{
+        padding: 0rem 0rem;
+    
+    }
+
+
+    #sec4-2 .image4-2,
+    #sec4-3 .image4-3,
+    #sec4-4 .image4-4,
+    #sec4-5 .image4-5{
+        width: 100%;
+        margin-bottom: 1.5rem;
+        margin-top: 1.8rem;
+    }
+
+
+
+
+    /* index-6 */
+    #sec5-1 .image5-1,
+    #sec5-2 .image5-2,
+    #sec5-3 .image5-3,
+    #sec5-4 .image5-4{
+        width: 100%;
+        margin-bottom: 1.5rem;
+        margin-top: 1.8rem;
+    }
+
+
+    /* index-6 */
+    #sec5-1 .image5-1,
+    #sec5-2 .image5-2,
+    #sec5-3 .image5-3,
+    #sec5-4 .image5-4{
+        width: 100%;
+        margin-bottom: 1.5rem;
+        margin-top: 1.8rem;
+    }
+
+
+
+    /* index-7 */
+    #sec6-1 .image6-1{
+        width: 100%;
+        margin-bottom: 1.5rem;
+        margin-top: 1.8rem;
+    }
+
+
+
+    #sec6-1 .right6-1::before{
+        display: none;
+    }
+
+
+
+
+    /* index-8 */
+    #sec7-1 .image7-1{
+        width: 100%;
+        margin-bottom: 1.5rem;
+        margin-top: 1.8rem;
+    }
+
+
+    #sec7-1 .bottom7-1 .rightsec7-1::before{
+        display: none;
+    }
+
+
+    /* index-9 */
+    #sec8-1 .image8-1 {
+        width: 100%;
+        margin-bottom: 1.5rem;
+        margin-top: 1.8rem;
+    }
+
+
+
+    /* index-10 */
+    #sec9-1 .image9-1,
+    #sec9-2 .image9-2 {
+        width: 100%;
+        margin-bottom: 1.5rem;
+        margin-top: 1.8rem;
+    }
+
+
+    
+    /* index-11 */
+    #sec10-1 .image10-1{
+        width: 100%;
+        margin-bottom: 1.5rem;
+        margin-top: 1.8rem;
+    }
+
+
+
+    /* index-12 */
+    #sec11-1 .image11-1{
+        width: 100%;
+        margin-bottom: 1.5rem;
+        margin-top: 1.8rem;
+        padding: 0rem 0rem;
+    }
+
+
+}
